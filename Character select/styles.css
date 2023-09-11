@@ -1,0 +1,53 @@
+body {
+  background-color: black;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.slide {
+  max-width: 100%;
+  max-height: 80vh;
+  object-fit: contain;
+  display: none;
+}
+
+.slide.active {
+  display: block;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.btn-container button {
+  margin: 0 10px;
+  padding: 10px;
+  font-size: 16px;
+  
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.play {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+.prev,.next{
+    background-color: rgb(255, 255, 255);
+
+}
+
+  
